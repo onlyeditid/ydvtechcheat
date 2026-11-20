@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "types": ["vite/client", "node"],
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@tauri-apps/api/core": ["./src/lib/tauri-shim/core.ts"],
+      "@tauri-apps/api/event": ["./src/lib/tauri-shim/event.ts"],
+      "@tauri-apps/api/window": ["./src/lib/tauri-shim/window.ts"],
+      "@tauri-apps/api/webviewWindow": ["./src/lib/tauri-shim/window.ts"],
+      "@tauri-apps/plugin-sql": ["./src/lib/tauri-shim/plugin-sql.ts"],
+      "@tauri-apps/plugin-http": ["./src/lib/tauri-shim/plugin-http.ts"],
+      "@tauri-apps/plugin-opener": ["./src/lib/tauri-shim/plugin-opener.ts"],
+      "@tauri-apps/plugin-autostart": ["./src/lib/tauri-shim/plugin-stubs.ts"],
+      "@tauri-apps/plugin-updater": ["./src/lib/tauri-shim/plugin-stubs.ts"],
+      "@tauri-apps/plugin-process": ["./src/lib/tauri-shim/plugin-stubs.ts"],
+      "@tauri-apps/plugin-global-shortcut": ["./src/lib/tauri-shim/plugin-stubs.ts"],
+      "tauri-plugin-macos-permissions-api": ["./src/lib/tauri-shim/plugin-stubs.ts"],
+      "tauri-plugin-posthog-api": ["./src/lib/tauri-shim/plugin-stubs.ts"],
+      "tauri-plugin-keychain": ["./src/lib/tauri-shim/plugin-stubs.ts"]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  },
+  "include": ["src"],
+  "exclude": ["dist", "src/**/*.test.ts"]
+}

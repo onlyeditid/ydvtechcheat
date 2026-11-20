@@ -1,0 +1,6 @@
+{
+  "name": "Pluely",
+  "description": "The Open Source Alternative to Cluely - A lightning-fast, privacy-first AI assistant that works seamlessly during meetings, interviews, and conversations.",
+  "requestFramePermissions": ["microphone", "display-capture"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
